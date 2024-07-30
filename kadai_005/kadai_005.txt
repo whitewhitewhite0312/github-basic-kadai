@@ -1,4 +1,4 @@
-Last login: Tue Jul 30 10:32:33 on ttys000
+Last login: Tue Jul 30 10:33:52 on ttys000
 fujiokahitomi@fujiokahitominoMacBook-Pro ~ % ls
 12345					Pictures
 Applications				Public
@@ -28,24 +28,28 @@ Changes not staged for commit:
 	modified:   hello_world.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git status
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	modified:   hello_world.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git log
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git log -p hello_world.txt
 commit f7ef818825797838bcf50d0e26dae24b061a6fbc (HEAD -> master)
 Author: samurai-terakoya <on0312fujioka@gmail.com>
 Date:   Tue Jul 30 10:24:18 2024 +0900
 
     ファイルをコミット
 
+diff --git a/hello_world.txt b/hello_world.txt
+index 6a3a563..e69de29 100644
+--- a/hello_world.txt
++++ b/hello_world.txt
+@@ -1,2 +0,0 @@
+-Hello,world!
+-こんにちは、世界！
+\ No newline at end of file
+
 commit d41bf647b98e7088694b8272d4bfd7a4291bfe9b
 Author: samurai-terakoya <on0312fujioka@gmail.com>
 Date:   Mon Jul 29 20:40:55 2024 +0900
 
     こんにちは、世界！
-fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % 
+
+diff --git a/hello_world.txt b/hello_world.txt
+new file mode 100644
+:
