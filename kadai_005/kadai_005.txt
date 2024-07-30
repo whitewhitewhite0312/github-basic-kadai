@@ -1,4 +1,4 @@
-Last login: Tue Jul 30 10:33:52 on ttys000
+Last login: Tue Jul 30 11:20:32 on ttys000
 fujiokahitomi@fujiokahitominoMacBook-Pro ~ % ls
 12345					Pictures
 Applications				Public
@@ -12,7 +12,13 @@ Music
 fujiokahitomi@fujiokahitominoMacBook-Pro ~ % cd
 fujiokahitomi@fujiokahitominoMacBook-Pro ~ % cd git_challenge
 fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git add hello_world.txt
-fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git commit -m "変更１"
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git commit -m "登録"
+On branch master
+nothing to commit, working tree clean
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git status
+On branch master
+nothing to commit, working tree clean
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git commit -m "テキスト１"
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -20,7 +26,7 @@ Changes not staged for commit:
 	modified:   hello_world.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git commit -m "変更２"
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git commit -m "テキスト２"
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -28,6 +34,32 @@ Changes not staged for commit:
 	modified:   hello_world.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git log
+commit f7ef818825797838bcf50d0e26dae24b061a6fbc (HEAD -> master)
+Author: samurai-terakoya <on0312fujioka@gmail.com>
+Date:   Tue Jul 30 10:24:18 2024 +0900
+
+    ファイルをコミット
+
+commit d41bf647b98e7088694b8272d4bfd7a4291bfe9b
+Author: samurai-terakoya <on0312fujioka@gmail.com>
+Date:   Mon Jul 29 20:40:55 2024 +0900
+
+    こんにちは、世界！
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
 fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git log -p hello_world.txt
 commit f7ef818825797838bcf50d0e26dae24b061a6fbc (HEAD -> master)
 Author: samurai-terakoya <on0312fujioka@gmail.com>
@@ -35,6 +67,8 @@ Date:   Tue Jul 30 10:24:18 2024 +0900
 
     ファイルをコミット
 
+diff --git a/hello_world.txt b/hello_world.txt
+diff --git a/hello_world.txt b/hello_world.txt
 diff --git a/hello_world.txt b/hello_world.txt
 index 6a3a563..e69de29 100644
 --- a/hello_world.txt
@@ -60,4 +94,5 @@ index 0000000..6a3a563
 +こんにちは、世界！
 \ No newline at end of file
 (END)
+
 
