@@ -1,0 +1,51 @@
+Last login: Tue Jul 30 10:32:33 on ttys000
+fujiokahitomi@fujiokahitominoMacBook-Pro ~ % ls
+12345					Pictures
+Applications				Public
+Creative Cloud Files			cd
+Desktop					git_challenge
+Documents				hello_world.txt
+Downloads				iCloud Drive（アーカイブ）
+Library					index.html
+Movies					samurai
+Music
+fujiokahitomi@fujiokahitominoMacBook-Pro ~ % cd
+fujiokahitomi@fujiokahitominoMacBook-Pro ~ % cd git_challenge
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git add hello_world.txt
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git commit -m "変更１"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git commit -m "変更２"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git log
+commit f7ef818825797838bcf50d0e26dae24b061a6fbc (HEAD -> master)
+Author: samurai-terakoya <on0312fujioka@gmail.com>
+Date:   Tue Jul 30 10:24:18 2024 +0900
+
+    ファイルをコミット
+
+commit d41bf647b98e7088694b8272d4bfd7a4291bfe9b
+Author: samurai-terakoya <on0312fujioka@gmail.com>
+Date:   Mon Jul 29 20:40:55 2024 +0900
+
+    こんにちは、世界！
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % 
