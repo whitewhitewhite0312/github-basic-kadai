@@ -52,4 +52,12 @@ Date:   Mon Jul 29 20:40:55 2024 +0900
 
 diff --git a/hello_world.txt b/hello_world.txt
 new file mode 100644
-:
+index 0000000..6a3a563
+--- /dev/null
++++ b/hello_world.txt
+@@ -0,0 +1,2 @@
++Hello,world!
++こんにちは、世界！
+\ No newline at end of file
+(END)
+
