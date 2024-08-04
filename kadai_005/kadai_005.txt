@@ -67,32 +67,107 @@ Date:   Tue Jul 30 10:24:18 2024 +0900
 
     ファイルをコミット
 
-diff --git a/hello_world.txt b/hello_world.txt
-diff --git a/hello_world.txt b/hello_world.txt
-diff --git a/hello_world.txt b/hello_world.txt
-index 6a3a563..e69de29 100644
---- a/hello_world.txt
-+++ b/hello_world.txt
-@@ -1,2 +0,0 @@
--Hello,world!
--こんにちは、世界！
-\ No newline at end of file
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git log
+commit f7ef818825797838bcf50d0e26dae24b061a6fbc (HEAD -> master)
+Author: samurai-terakoya <on0312fujioka@gmail.com>
+Date:   Tue Jul 30 10:24:18 2024 +0900
+
+    ファイルをコミット
 
 commit d41bf647b98e7088694b8272d4bfd7a4291bfe9b
 Author: samurai-terakoya <on0312fujioka@gmail.com>
 Date:   Mon Jul 29 20:40:55 2024 +0900
 
     こんにちは、世界！
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git add hello_world.txt
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git commit -m "hello_world.txt"
+[master 85a7eb1] hello_world.txt
+ 1 file changed, 1 insertion(+)
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git log
+commit 85a7eb1b5b9cdd6fe8740af02194c0b6506e5715 (HEAD -> master)
+Author: samurai-terakoya <on0312fujioka@gmail.com>
+Date:   Sun Aug 4 10:13:15 2024 +0900
 
-diff --git a/hello_world.txt b/hello_world.txt
-new file mode 100644
-index 0000000..6a3a563
---- /dev/null
-+++ b/hello_world.txt
-@@ -0,0 +1,2 @@
-+Hello,world!
-+こんにちは、世界！
-\ No newline at end of file
-(END)
+    hello_world.txt
+
+commit f7ef818825797838bcf50d0e26dae24b061a6fbc
+Author: samurai-terakoya <on0312fujioka@gmail.com>
+Date:   Tue Jul 30 10:24:18 2024 +0900
+
+    ファイルをコミット
+
+commit d41bf647b98e7088694b8272d4bfd7a4291bfe9b
+Author: samurai-terakoya <on0312fujioka@gmail.com>
+Date:   Mon Jul 29 20:40:55 2024 +0900
+
+    こんにちは、世界！
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git commit -m "日本語訳を追記"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git log
+commit 85a7eb1b5b9cdd6fe8740af02194c0b6506e5715 (HEAD -> master)
+Author: samurai-terakoya <on0312fujioka@gmail.com>
+Date:   Sun Aug 4 10:13:15 2024 +0900
+
+    hello_world.txt
+
+commit f7ef818825797838bcf50d0e26dae24b061a6fbc
+Author: samurai-terakoya <on0312fujioka@gmail.com>
+Date:   Tue Jul 30 10:24:18 2024 +0900
+
+    ファイルをコミット
+
+commit d41bf647b98e7088694b8272d4bfd7a4291bfe9b
+Author: samurai-terakoya <on0312fujioka@gmail.com>
+Date:   Mon Jul 29 20:40:55 2024 +0900
+
+    こんにちは、世界！
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git add hello_world.txt 
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git commit -m "日本語訳を追記"
+[master 9737e08] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git log
+commit 9737e08cd1b91f60e5d5016ebfea610b0b805e35 (HEAD -> master)
+Author: samurai-terakoya <on0312fujioka@gmail.com>
+Date:   Sun Aug 4 10:17:23 2024 +0900
+
+    日本語訳を追記
+
+commit 85a7eb1b5b9cdd6fe8740af02194c0b6506e5715
+Author: samurai-terakoya <on0312fujioka@gmail.com>
+Date:   Sun Aug 4 10:13:15 2024 +0900
+
+    hello_world.txt
+
+commit f7ef818825797838bcf50d0e26dae24b061a6fbc
+Author: samurai-terakoya <on0312fujioka@gmail.com>
+Date:   Tue Jul 30 10:24:18 2024 +0900
+
+    ファイルをコミット
+
+commit d41bf647b98e7088694b8272d4bfd7a4291bfe9b
+Author: samurai-terakoya <on0312fujioka@gmail.com>
+Date:   Mon Jul 29 20:40:55 2024 +0900
+
+    こんにちは、世界！
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % git log --oneline
+9737e08 (HEAD -> master) 日本語訳を追記
+85a7eb1 hello_world.txt
+f7ef818 ファイルをコミット
+d41bf64 こんにちは、世界！
+fujiokahitomi@fujiokahitominoMacBook-Pro git_challenge % 
 
 
